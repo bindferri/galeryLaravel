@@ -1,0 +1,87 @@
+html{
+    font-size: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+* , *::after , *::before{
+    box-sizing: border-box;
+}
+
+body{
+    /*background-image: url("marcus-loke-WQJvWU_HZFo-unsplash.jpg");*/
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    margin: 0;
+}
+
+.form-card{
+    height: 50rem;
+    width: 50rem;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 0;
+    position: absolute;
+    top: calc(50% - 25rem);
+    left: calc(50% - 25rem);
+    background-color: white;
+}
+
+.form-card--register{
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: center;
+    color: #1F4690;
+}
+
+.form-card--register input{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #1F4690;
+    border-radius: 10px;
+    outline-style: none;
+    margin-bottom: 1rem;
+}
+
+.form-card--register label{
+    font-size: 1.8rem;
+}
+
+.form-card--register button{
+    padding: 1.2rem 1rem;
+    width: 50%;
+    margin-left: calc(50% - 10rem);
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    background-color: #1F4690;
+    color: #3EC70B;
+    border: none;
+    cursor: pointer;
+}
+
+.form-card--register img{
+    width: 30rem;
+    margin-left: calc(50% - 15rem);
+    padding-bottom: 2rem;
+}
+
+/* Dashboard */
+
+.dashboard{
+    display: flex;
+}
+
+.navigation-bar{
+    height: 10rem;
+    width: 30rem;
+    background-color: red;
+}
+
+.dashboard-content{
+    height: 10rem;
+    width: 10rem;
+    background-color: blue;
+    flex-grow: 1;
+}
