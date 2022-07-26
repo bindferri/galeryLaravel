@@ -8,17 +8,26 @@ html{
 }
 
 body{
-    /*background-image: url("marcus-loke-WQJvWU_HZFo-unsplash.jpg");*/
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover;
     margin: 0;
+}
+
+/* Register */
+
+.background{
+    background-image: url("marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+    height: 100%;
+    width: 100%;
 }
 
 .form-card{
     height: 50rem;
     width: 50rem;
-    border-radius: 10%;
+    border-radius: 3%;
     box-shadow: 0 0 10px 0;
     position: absolute;
     top: calc(50% - 25rem);
@@ -33,14 +42,14 @@ body{
     margin: 0 auto;
     height: 100%;
     justify-content: center;
-    color: #1F4690;
+    color: #2b2b2b;
 }
 
 .form-card--register input{
     width: 100%;
     padding: 0.8rem 1rem;
     border: 1px solid #1F4690;
-    border-radius: 10px;
+    border-radius: 5px;
     outline-style: none;
     margin-bottom: 1rem;
 }
@@ -54,9 +63,9 @@ body{
     width: 50%;
     margin-left: calc(50% - 10rem);
     margin-top: 1.5rem;
-    border-radius: 30px;
+    border-radius: 5px;
     background-color: #1F4690;
-    color: #3EC70B;
+    color: #ffffff;
     border: none;
     cursor: pointer;
 }
@@ -71,17 +80,130 @@ body{
 
 .dashboard{
     display: flex;
+    min-height: calc(100vh - 10rem);
 }
 
 .navigation-bar{
-    height: 10rem;
     width: 30rem;
-    background-color: red;
+    background-color: #0F3D3E;
+    border-top: 1px solid #F1F1F1;
 }
 
 .dashboard-content{
-    height: 10rem;
     width: 10rem;
-    background-color: blue;
     flex-grow: 1;
+    background-color: #FEFBF6;
+}
+
+.navbar{
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    background-color: #0F3D3E;
+}
+
+.navbar img{
+    width: 10rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #2b2b2b;
+    border: 1px solid #fff;
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-weight: 800;
+}
+
+.navigation-bar--list{
+    list-style: none;
+    font-size: 2rem;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.navigation-bar--list li{
+    display: block;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.navigation-bar--list li::after{
+    content: '';
+    margin-top: 2rem;
+    border-bottom: 1px solid #F1F1F1;
+    display: block;
+}
+
+.navigation-bar--list a{
+    text-decoration: none;
+    color: #F1F1F1;
+    padding: 0 8rem;
+}
+
+.navigation-bar{
+    position: sticky;
+    top: 0;
+}
+
+.card{
+    width: 45rem;
+    height: 30rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("icons8-team-FcLyt7lW5wg-unsplash.jpg");
+    background-size: cover;
+}
+
+.card h3{
+    margin: 0;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.card-content{
+    height: 100%;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 3em;
+}
+
+.card-content--more{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content--more img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-content--more i{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.card-content--more__icon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.row{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-left: 4.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    justify-content: flex-start;
 }
