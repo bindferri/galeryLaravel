@@ -8,23 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto+Slab:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div class="background"></div>
     <div class="form-card">
-        <form action="" class="form-card--register" method="post">
-            <img src="images/ao_RGB_BLAU_Schriftzug.png" alt="">
-            <label>Firstname:</label>
-            <input type="text" name="firstname" required>
-            <label>Lastname:</label>
-            <input type="text" name="lastname" required>
+        <form action="#" class="form-card--register" method="post">
+            <img src="aologo2.png" alt="">
+            <h2>Sign Up</h2>
+            <p>Discover our journey with us!</p>
+            <div class="form-card--inputs">
+            <label>Name and Surname:</label>
+            <div class="form-card--icons">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="firstname" placeholder="John Smith" required>
+            </div>
             <label>Email:</label>
-            <input type="email" name="email" required>
+            <div class="form-card--icons">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" placeholder="johnsmith@gmail.com" required>
+            </div>
             <label>Password:</label>
-            <input type="password" name="password" required>
-            <button type="submit">Register</button>
+            <div class="form-card--icons">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" name="password" placeholder="********" required>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p class="account-login">Have an account? <a href="https://www.facebook.com/">Log in</a></p>
+            </div>
         </form>
+        <div class="form-card--image">
+            <img src="pexels-freemockupsorg-775219.png" alt="">
+        </div>
     </div>
 </body>
 </html>

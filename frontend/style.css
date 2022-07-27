@@ -13,74 +13,112 @@ body{
 
 /* Register */
 
-.background{
-    background-image: url("marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    position: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(40%);
-    height: 100%;
-    width: 100%;
+.form-card{
+    display: flex;
 }
 
-.form-card{
-    height: 50rem;
-    width: 50rem;
-    border-radius: 3%;
-    box-shadow: 0 0 10px 0;
-    position: absolute;
-    top: calc(50% - 25rem);
-    left: calc(50% - 25rem);
-    background-color: white;
+.form-card--image{
+    width: 50%;
+}
+
+.form-card--image img{
+    width: 100%;
+    height: 100vh;
+    display: block;
 }
 
 .form-card--register{
     display: flex;
     flex-direction: column;
-    max-width: 40rem;
-    margin: 0 auto;
+    width: 50%;
     height: 100%;
     justify-content: center;
     color: #2b2b2b;
+    padding-left: 19.6rem;
+    padding-top: 11.4rem;
 }
 
 .form-card--register input{
     width: 100%;
+    height: 5.2rem;
     padding: 0.8rem 1rem;
-    border: 1px solid #1F4690;
+    background-color: #F6F6F6;
+    border: none;
     border-radius: 5px;
     outline-style: none;
     margin-bottom: 1rem;
+    margin-top: 0.8rem;
+    text-indent: 5.1rem;
 }
 
-.form-card--register label{
-    font-size: 1.8rem;
+.form-card--register i{
+    font-size: 2rem;
+    position: absolute;
+    left: 2.5rem;
+    top: calc(50% - 1rem);
+}
+
+.form-card--register label:not(:first-child){
+    margin-top: 2rem;
+}
+
+.form-card--icons {
+    position: relative;
+    max-width: 57rem;
 }
 
 .form-card--register button{
     padding: 1.2rem 1rem;
-    width: 50%;
-    margin-left: calc(50% - 10rem);
     margin-top: 1.5rem;
     border-radius: 5px;
-    background-color: #1F4690;
+    background-color: #0F3D3E;
     color: #ffffff;
     border: none;
     cursor: pointer;
+    max-width: 57rem;
+    height: 5.2rem;
 }
 
 .form-card--register img{
-    width: 30rem;
-    margin-left: calc(50% - 15rem);
-    padding-bottom: 2rem;
+    width: 10.3rem;
+    height: 6.4rem;
+    margin-bottom: 2rem;
+}
+
+.form-card--register h2{
+    font-size: 3.2rem;
+    font-weight: 800;
+    padding-top: 3rem;
+    margin: 0;
+}
+
+.form-card--register p{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.form-card--inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.8rem;
+    font-size: 1.4rem;
+}
+
+.form-card--register input::placeholder{
+    font-size: 1.2rem;
+}
+
+.account-login{
+    font-size: 1.4rem!important;
+    margin-top: 2rem!important;
+}
+
+.account-login a{
+    color: #2b2b2b;
 }
 
 /* Dashboard */
-
-/*.dashboard{*/
-/*    display: flex;*/
-/*}*/
 
 .navigation-bar{
     width: 30rem;
@@ -179,12 +217,54 @@ body{
     width: 15rem;
     height: 4rem;
     border-radius: 4px;
-    outline: none;
+    border: none;
     color: white;
-    background-color: rebeccapurple;
+    background-color: #0F3D3E;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-weight: 700;
+}
+
+.left{
     margin-left: 19.65rem;
+}
+
+/* Modal */
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.modal{
+    position: fixed;
+    height: 60rem;
+    width: 60rem;
+    top: calc(50% - 30rem);
+    left: calc(50% - 30rem);
+    border-radius: 7px;
+    background-color: white;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: center;
+}
+
+.modal i{
+    font-size: 2.5rem;
+    position: absolute;
+    right: 4rem;
+    top: 3rem;
 }
