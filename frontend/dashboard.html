@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="navbar">
@@ -176,15 +178,25 @@
 
     <div class="overlay">
         <div class="modal">
-            <i class="fa-solid fa-xmark"></i>
+
+            <i class="fa-solid fa-xmark close"></i>
             <form action="#" enctype="multipart/form-data" class="modal-form">
+                <h2>Upload new file</h2>
                 <label>Title:</label>
-                <input type="text">
-                <label></label>Image:</label>
-                <input type="file">
+                <div class="modal-form--icons">
+                <i class="fa-solid fa-align-justify icons"></i>
+                <input type="text" placeholder="John Smith">
+                </div>
                 <label>Description:</label>
-                <input type="text">
+                <div class="modal-form--icons">
+                <i class="fa-solid fa-note-sticky icons"></i>
+                <input type="text" placeholder="John Smith">
+                </div>
+                <label>Image:</label>
+                <div class="modal-form--icons">
+                <input type="file">
                 <button class="create-new">Create</button>
+                </div>
             </form>
         </div>
     </div>

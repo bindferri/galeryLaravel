@@ -245,8 +245,8 @@ body{
 
 .modal{
     position: fixed;
-    height: 60rem;
-    width: 60rem;
+    height: 66.4rem;
+    width: 66.4rem;
     top: calc(50% - 30rem);
     left: calc(50% - 30rem);
     border-radius: 7px;
@@ -256,13 +256,57 @@ body{
 .modal-form{
     display: flex;
     flex-direction: column;
-    max-width: 40rem;
-    margin: 0 auto;
+    max-width: 57rem;
     height: 100%;
-    justify-content: center;
+    padding-top: 4.7rem;
+    margin: 0 auto;
 }
 
-.modal i{
+.modal-form h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-bottom: 4rem;
+    margin: 0;
+}
+
+.modal-form label{
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+.modal-form label:not(:first-child){
+    padding-top: 2rem;
+}
+
+.modal-form input[type=text]{
+    width: 100%;
+    height: 5.2rem;
+    padding: 0.8rem 1rem;
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 5px;
+    outline-style: none;
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+    text-indent: 5.1rem;
+}
+
+.modal-form input::placeholder{
+    font-size: 1.2rem;
+}
+
+.modal-form .icons{
+    font-size: 2rem;
+    position: absolute;
+    left: 2.5rem;
+    top: calc(50% - 1rem);
+}
+
+.modal-form--icons{
+    position: relative;
+}
+
+.close{
     font-size: 2.5rem;
     position: absolute;
     right: 4rem;
