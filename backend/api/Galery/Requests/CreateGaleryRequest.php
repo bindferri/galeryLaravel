@@ -13,7 +13,7 @@ class CreateGaleryRequest extends ApiRequest
             'title' => 'required|string|max:255',
             'description' => 'required|string',
             'image' => 'image',
-            'users_id' => ['required',Rule::exists('users','id')]
+            'users_id' => [Rule::exists('users','id')]
         ];
     }
 }

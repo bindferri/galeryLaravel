@@ -65,9 +65,9 @@ class GaleryService
     }
 
     public function storeImage($image){
-            $imageName = explode('/', $image);
-            $image = $image->store('public/galery_assets');
-            return $imageName[array_key_last($imageName)];
+        $image = $image->store('public/galery_assets');
+        $imageName = explode('/', $image);
+        return $imageName[array_key_last($imageName)];
     }
 
     public function deleteImage($galery){

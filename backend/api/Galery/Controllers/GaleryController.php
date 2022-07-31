@@ -22,6 +22,7 @@ class GaleryController extends Controller
     public function getAll()
     {
         $sendData = $this->galeryService->getByUser();
+//        $sendData = $this->galeryService->getAll();
 
         return $this->response($sendData);
     }
@@ -42,9 +43,7 @@ class GaleryController extends Controller
     public function create(CreateGaleryRequest $request)
     {
         $data = $request->validated();
-
         $data['image'] = $this->galeryService->storeImage($data['image']);
-
         $sendData['galery'] = $this->galeryService->create($data);
 
         return $this->response($sendData, 201);

@@ -16,6 +16,12 @@ class Galery extends Model {
         'title', 'image', 'description', 'users_id'
     ];
 
+    protected $appends = ['fullUrl'];
+
+    protected function getfullUrlAttribute (){
+        return storage_path('app\public\galery_assets') . '\\' . $this->image;
+    }
+
     /**
      * The attributes that should be hidden for arrays.
      *
