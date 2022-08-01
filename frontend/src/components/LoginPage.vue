@@ -46,7 +46,6 @@ export default {
           if (data.success !== false){
             localStorage.setItem('accessToken',data.access_token)
             this.$router.push('/dashboard')
-            console.log(data)
           }
 
       }).catch(e => console.log(e))

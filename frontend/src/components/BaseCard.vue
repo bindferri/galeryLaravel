@@ -26,13 +26,8 @@ export default {
   },
   methods: {
     deleteGalery(){
-      let token = localStorage.getItem("accessToken")
-      console.log(token)
       fetch("http://127.0.0.1:8000/galery/"+ this.id,{
         method: "Delete",
-        headers: {
-          'Authorization': 'Bearer ' + token
-        },
       }).then((response) => {
         this.$emit('isDone',response)
       });
